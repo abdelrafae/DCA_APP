@@ -33,7 +33,24 @@ def forecast_well_with_dates(qi, di, b, months, start_date):
 
 # --- Streamlit App ---
 st.set_page_config(layout="wide")
-st.title("🛢️ Decline Curve Analysis with B-Factor Estimation (LM Method)")
+st.title("🛢️ Decline Curve Analysis with B-Factor Estimation ")
+
+
+uploaded_file = st.file_uploader("📤 Upload Excel file", type=["xlsx"])
+
+# 📌 Show expected format below uploader
+st.markdown("""
+> 💡 **Note:** Please upload an Excel file in the following format (columns must match exactly):
+>
+> `Well Name | Qi | Qe | t, months | Di Mon Eff | Start date`
+>
+> Example:
+> ```
+> Well-1 | 1500 | 200 | 12 | 0.15 | 2022-01-01
+> ```
+""")
+
+
 
 uploaded_file = st.file_uploader("📤 Upload Excel file", type=["xlsx"])
 
