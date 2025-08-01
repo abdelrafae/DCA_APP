@@ -36,7 +36,7 @@ st.set_page_config(layout="wide")
 st.title("🛢️ Decline Curve Analysis with B-Factor Estimation ")
 
 
-uploaded_file = st.file_uploader("📤 Upload Excel file", type=["xlsx"])
+# uploaded_file = st.file_uploader("📤 Upload Excel file", type=["xlsx"])
 
 # 📌 Show expected format below uploader
 st.markdown("""
