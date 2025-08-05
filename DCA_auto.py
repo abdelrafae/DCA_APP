@@ -545,7 +545,9 @@ if uploaded_file:
         df.columns = ["well", "date", "oil", "days"]
 
         try:
-            df["date"] = pd.to_datetime(df["date"])
+            # df["date"] = pd.to_datetime(df["date"])
+            df["date"] = pd.to_datetime(df["date"], dayfirst=True, errors='coerce')
+
         except Exception as e:
             st.error(f"❌ Date conversion error: {e}")
             st.stop()
@@ -782,4 +784,5 @@ with tab_batch:
         st.download_button("📥 Download Summary (Excel)", sum_buffer.getvalue(),
                            file_name="all_wells_fitting_summary.xlsx", use_container_width=True)
         st.markdown("</div>", unsafe_allow_html=True)
+
 
