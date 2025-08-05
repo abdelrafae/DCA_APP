@@ -20,10 +20,14 @@ secondaryBackgroundColor = "#F6F8FF"
 textColor = "#1f2a44"
 """), encoding="utf-8")
 
+
+
 # --- Put near the top of app.py ---
 from PIL import Image
 import base64, io, streamlit as st
 
+
+    add_logo_below_deploy("R.png", width=120, top_px=64, right_px=18)
 def add_logo_below_deploy(path:str, width:int=120, top_px:int=64, right_px:int=16):
     """Renders a logo fixed just below the header, near the Deploy menu."""
     img = Image.open(path)
@@ -51,7 +55,8 @@ def add_logo_below_deploy(path:str, width:int=120, top_px:int=64, right_px:int=1
     </style>
     <img class="app-logo-fixed" src="data:image/png;base64,{b64}" alt="logo">
     """, unsafe_allow_html=True)
-    add_logo_below_deploy("R.png", width=120, top_px=64, right_px=18)
+    
+
 
 # add_logo_below_deploy("D:\mohie\R.png", width=120, top_px=64, right_px=18)
 
@@ -786,6 +791,7 @@ with tab_batch:
         st.download_button("📥 Download Summary (Excel)", sum_buffer.getvalue(),
                            file_name="all_wells_fitting_summary.xlsx", use_container_width=True)
         st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
