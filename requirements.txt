@@ -4,13 +4,6 @@ numpy
 matplotlib
 scipy
 openpyxl
-lmfit
-XlsxWriter
-differential_evolution
-BytesIO
-matplotlib.pyplot
-Image
-ase64
-textwrap
-pathlib
-os
+xlsxwriter
+pillow
+
