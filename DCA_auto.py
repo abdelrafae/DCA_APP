@@ -1,5 +1,4 @@
 
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -784,5 +783,6 @@ with tab_batch:
         st.download_button("📥 Download Summary (Excel)", sum_buffer.getvalue(),
                            file_name="all_wells_fitting_summary.xlsx", use_container_width=True)
         st.markdown("</div>", unsafe_allow_html=True)
+
 
 
