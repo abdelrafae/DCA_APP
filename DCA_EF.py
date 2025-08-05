@@ -51,10 +51,11 @@ def add_logo_below_deploy(path:str, width:int=120, top_px:int=64, right_px:int=1
     </style>
     <img class="app-logo-fixed" src="data:image/png;base64,{b64}" alt="logo">
     """, unsafe_allow_html=True)
+    add_logo_below_deploy("assets/R.png", width=120, top_px=64, right_px=18)
 
 # add_logo_below_deploy("D:\mohie\R.png", width=120, top_px=64, right_px=18)
 
- add_logo_below_deploy("assets/R.png", width=120, top_px=64, right_px=18)
+
 
 
 # ============================ PAGE ============================
@@ -785,6 +786,7 @@ with tab_batch:
         st.download_button("📥 Download Summary (Excel)", sum_buffer.getvalue(),
                            file_name="all_wells_fitting_summary.xlsx", use_container_width=True)
         st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
