@@ -6,9 +6,11 @@ scipy
 openpyxl
 lmfit
 XlsxWriter
-scipy.optimize
-io
+differential_evolution
+BytesIO
 matplotlib.pyplot
 Image
 ase64
-
+textwrap
+pathlib
+os
