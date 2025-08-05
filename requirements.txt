@@ -6,3 +6,8 @@ scipy
 openpyxl
 lmfit
 XlsxWriter
+scipy.optimize
+io
+matplotlib.pyplot
+PIL
+ase64
