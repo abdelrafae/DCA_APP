@@ -9,5 +9,6 @@ XlsxWriter
 scipy.optimize
 io
 matplotlib.pyplot
-PIL
+Image
 ase64
+
